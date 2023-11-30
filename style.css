@@ -11,20 +11,38 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #87CEEB; /* Sky blue color */
+    color: #000; /* Black text color */
     padding: 1em 0;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-width: 100px; /* Adjust the size based on your logo dimensions */
+    margin-right: 10px;
+}
+
+nav {
+    flex-grow: 1;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Black text color */
+    font-weight: bold;
 }
 
 section {
@@ -32,13 +50,22 @@ section {
 }
 
 #hero {
-    background-color: #f4f4f4;
+    background: url('images/hero-image.png') center/cover no-repeat; /* Background image properties */
     text-align: center;
     padding: 5em 0;
+    color: #000; /* Black text color */
+    position: relative; /* Add this to position the text within the section */
 }
 
 #hero h2 {
-    color: #333;
+    color: #000; /* Black text color */
+    background-color: rgba(255, 255, 255, 0.7); /* Background color for text with some transparency */
+    display: inline-block; /* Add this to make the background cover only the text width */
+    padding: 10px; /* Add padding to make the background more visible */
+}
+#hero img {
+    max-width: 100%;
+    height: auto;
 }
 
 #services .service {
